@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_settings_wallets"/>
+
+            <TextView
+                android:id="@+id/security_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/settings_security_left_margin"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/security"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/list_group_head"/>
+
+            <include layout="@layout/layout_settings_pin"/>
+
+            <TextView
+                android:id="@+id/socials_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/normal_margin"
+                android:layout_marginStart="@dimen/settings_security_left_margin"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/title_socials"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/list_group_head"/>
+
+            <include layout="@layout/layout_settings_facebook"/>
+
+            <include layout="@layout/layout_settings_reddit"/>
+
+            <include layout="@layout/layout_settings_youtube"/>
+
+            <include layout="@layout/layout_settings_discord"/>
+
+            <include layout="@layout/layout_settings_twitter"/>
+
+            <include layout="@layout/layout_settings_medium"/>
+
+            <include layout="@layout/layout_settings_github"/>
+
+            <TextView
+                android:id="@+id/support_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/normal_margin"
+                android:layout_marginStart="@dimen/settings_security_left_margin"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/title_support"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/list_group_head"/>
+
+            <include layout="@layout/layout_settings_rate"/>
+
+            <include layout="@layout/layout_settings_contact"/>
+
+            <include layout="@layout/layout_settings_privacy"/>
+
+            <include layout="@layout/layout_settings_terms"/>
+
+            <include layout="@layout/layout_settings_version"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list
-    xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item android:drawable="@color/white" />
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
     <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/splash_end_color" />
+            <gradient
+                android:type="linear"
+                android:startColor="@color/splash_start_color"
+                android:endColor="@color/splash_end_color"
+                android:angle="225" />
+        </shape>
+    </item>
+    <item android:top="@dimen/splash_mybit_image_top">
         <bitmap
-            android:gravity="center"
-            android:src="@mipmap/ic_splash" />
+            android:gravity="top|center_horizontal"
+            android:tileMode="disabled"
+            android:src="@drawable/ic_splash_mybit" />
+    </item>
+    <item android:top="@dimen/splash_welcome_top">
+        <bitmap
+            android:gravity="top|center_horizontal"
+            android:tileMode="disabled"
+            android:src="@drawable/ic_welcome_to" />
+    </item>
+    <item android:top="@dimen/splash_mybit_title_top">
+        <bitmap
+            android:gravity="top|center_horizontal"
+            android:tileMode="disabled"
+            android:src="@drawable/ic_splash_mybit_title" />
+    </item>
+    <item android:bottom="@dimen/splash_wait_bottom">
+        <bitmap
+            android:gravity="bottom|center_horizontal"
+            android:tileMode="disabled"
+            android:src="@drawable/ic_wait_few_seconds" />
     </item>
 </layer-list>

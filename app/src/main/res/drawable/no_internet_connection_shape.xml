@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/no_internet_popup_radius" />
+            <solid android:color="@color/no_internet_connection_shadow" />
+        </shape>
+    </item>
+    <item android:bottom="@dimen/no_internet_popup_shadow_bottom" >
+        <shape>
+            <corners android:radius="@dimen/no_internet_popup_radius" />
+            <solid android:color="@color/no_internet_connection_background" />
+        </shape>
+    </item>
+</layer-list>

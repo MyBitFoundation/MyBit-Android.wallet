@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/big_margin"
+        android:paddingStart="@dimen/big_margin"
+        android:paddingBottom="@dimen/big_margin">
+
+        <com.wallet.crypto.mybitapp.ui.widget.view.HelperTextInputLayout
+            android:id="@+id/mnemonic_input_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextInputLayoutStyle"
+            app:errorTextAppearance="@style/AppTheme.HelperTextInputLayout"
+            app:helperText="@string/suggestion_mnemonic"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/big_margin">
+
+            <EditText
+                android:id="@+id/mnemonic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/hint_mnemonic"
+                android:paddingTop="@dimen/normal_margin_x"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textMultiLine|textVisiblePassword"
+                android:minLines="3"
+                android:singleLine="false"/>
+
+        </com.wallet.crypto.mybitapp.ui.widget.view.HelperTextInputLayout>
+
+        <Button
+            android:id="@+id/btn_paste"
+            android:minWidth="0dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_paste"
+            android:textColor="@color/lightBlue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/import_action"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_margin"
+            android:text="@string/action_import"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mnemonic_input_layout"/>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

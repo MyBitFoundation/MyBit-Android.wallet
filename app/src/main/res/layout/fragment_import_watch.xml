@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/big_margin">
+
+        <com.wallet.crypto.mybitapp.ui.widget.view.HelperTextInputLayout
+            android:id="@+id/watch_input_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextInputLayoutStyle"
+            app:errorTextAppearance="@style/AppTheme.HelperTextInputLayout"
+            app:helperText="@string/suggestion_watch"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:paddingEnd="@dimen/import_large_margin"
+                android:hint="@string/hint_watch_address"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text|textVisiblePassword"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+        </com.wallet.crypto.mybitapp.ui.widget.view.HelperTextInputLayout>
+
+        <Button
+            android:id="@+id/btn_paste"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="@dimen/import_paste_width"
+            android:layout_height="wrap_content"
+            android:text="@string/action_paste"
+            android:textColor="@color/lightBlue"
+            app:layout_constraintEnd_toStartOf="@+id/btn_scan"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/btn_scan"
+            android:layout_width="@dimen/import_scan_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/scan_qr"
+            android:paddingTop="@dimen/big_padding"
+            android:paddingBottom="@dimen/big_padding"
+            android:src="@mipmap/qr_code_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_paste"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/import_action"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_margin"
+            android:text="@string/action_import"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/watch_input_layout"/>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

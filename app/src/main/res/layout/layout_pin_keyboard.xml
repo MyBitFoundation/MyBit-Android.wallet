@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ly_keyboard">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ly_one"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pin_line_height"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toStartOf="@id/guidelineleft"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/pin_key_one"
+                android:theme="@style/PinKeyTextView" />
+
+        </LinearLayout>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33"/>
+
+        <LinearLayout
+            android:id="@+id/ly_two"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pin_line_height"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="@id/guidelineleft"
+            app:layout_constraintEnd_toStartOf="@id/guidelineright">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/pin_key_two"
+                android:theme="@style/PinKeyTextView"/>
+
+        </LinearLayout>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.67"/>
+
+        <LinearLayout
+            android:id="@+id/ly_three"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pin_line_height"
+            app:layout_constraintLeft_toRightOf="@id/ly_two"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toEndOf="@id/guidelineright"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/pin_key_three"
+                android:theme="@style/PinKeyTextView"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_four"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pin_line_height"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineleft"
+            app:layout_constraintTop_toBottomOf="@id/ly_one"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/pin_key_four"
+                android:theme="@style/PinKeyTextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_five"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pin_line_height"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineright"
+            app:layout_constraintStart_toEndOf="@+id/guidelineleft"
+            app:layout_constraintTop_toBottomOf="@id/ly_two">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/pin_key_five"
+                android:theme="@style/PinKeyTextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_six"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pin_line_height"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelineright"
+            app:layout_constraintTop_toBottomOf="@id/ly_three">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/pin_key_six"
+                android:theme="@style/PinKeyTextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_seven"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pin_line_height"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineleft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ly_four">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/pin_key_seven"
+                android:theme="@style/PinKeyTextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_eight"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pin_line_height"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineright"
+            app:layout_constraintStart_toEndOf="@+id/guidelineleft"
+            app:layout_constraintTop_toBottomOf="@id/ly_five">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/pin_key_eight"
+                android:theme="@style/PinKeyTextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_nine"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pin_line_height"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelineright"
+            app:layout_constraintTop_toBottomOf="@id/ly_six">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/pin_key_nine"
+                android:theme="@style/PinKeyTextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_zero"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pin_line_height"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineright"
+            app:layout_constraintStart_toEndOf="@+id/guidelineleft"
+            app:layout_constraintTop_toBottomOf="@+id/ly_eight">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/pin_key_zero"
+                android:theme="@style/PinKeyTextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_backspace"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pin_line_height"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelineright"
+            app:layout_constraintTop_toBottomOf="@id/ly_nine">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_backspace" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

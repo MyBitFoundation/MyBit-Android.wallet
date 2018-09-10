@@ -15,11 +15,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
-    <com.wallet.crypto.trustapp.widget.HelperTextInputLayout
+    <com.wallet.crypto.mybitapp.ui.widget.view.HelperTextInputLayout
         app:hintEnabled="false"
         app:errorEnabled="true"
         app:passwordToggleEnabled="true"
         app:helperText="@string/suggestion_empty_password_available"
+        app:errorTextAppearance="@style/AppTheme.HelperTextInputLayout"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,5 +31,5 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
-    </com.wallet.crypto.trustapp.widget.HelperTextInputLayout>
+    </com.wallet.crypto.mybitapp.ui.widget.view.HelperTextInputLayout>
 </LinearLayout>

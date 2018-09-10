@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/wallets_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/settings_item_height"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/iv_wallets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wallet_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_wallets"/>
+
+    <TextView
+        android:id="@+id/wallet_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/settings_left_right_margin_item"
+        android:layout_marginStart="@dimen/settings_text_content_start"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="@string/title_account"
+        android:textColor="@color/settings_item_title"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintBottom_toTopOf="@+id/address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/settings_left_right_margin_item"
+        android:layout_marginStart="@dimen/settings_text_content_start"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/settings_item_subtitle"
+        android:textSize="@dimen/list_group_head"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_wallets"
+        app:layout_constraintTop_toBottomOf="@+id/wallet_title"/>
+
+</android.support.constraint.ConstraintLayout>

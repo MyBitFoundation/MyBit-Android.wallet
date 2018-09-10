@@ -1,26 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="green">#2fbb4f</color>
-	<color name="red">#f7506c</color>
-	<color name="white">#FFFFFFFF</color>
-	<color name="black">#313849</color>
+    <color name="black">#313849</color>
 
-	<color name="colorPrimary">#2e91db</color>
-	<color name="colorPrimaryDark">#1E76CE</color>
-	<color name="colorAccent">#2e91db</color>
+    <color name="colorPrimary">#0b3f9c</color>
+    <color name="colorPrimaryDark">#083178</color>
+    <color name="lightBlue">#1c68bc</color>
 
-    <!--<color name="title">#89000000</color>-->
-	<color name="secondary_text">#40000000</color>
+    <color name="secondary_text">#40000000</color>
 
-	<color name="bottom_dialog_title">#89000000</color>
-	<color name="bottom_dialog_item">#dd000000</color>
+    <color name="bottom_dialog_title">#89000000</color>
+    <color name="bottom_dialog_item">#dd000000</color>
 
     <color name="list_group_head">#40000000</color>
 
-	<color name="semitransparentWhite">#AAFFFFFF</color>
+    <color name="semitransparentWhite">#AAFFFFFF</color>
 
-	<color name="QRCodeBlackColor">#FF000000</color>
-	<color name="QRCodeWhiteColor">#FFFFFFFF</color>
+    <color name="QRCodeBlackColor">#FF000000</color>
+    <color name="QRCodeWhiteColor">#FFFFFFFF</color>
 
     <color name="item_icon_tint">#89000000</color>
+
+    <color name="fontColorDarkBlue">#313849</color>
+    <color name="fontColorDark">#212121</color>
+    <color name="fontColorDark64Opacity">#a3212121</color>
+    <color name="fontColorDark50Opacity">#7f212121</color>
+    <color name="tokenDividerColor">#e1e1e1</color>
+    <color name="colorPositive">#46ad5e</color>
+    <color name="colorNegative">#e55169</color>
+
+    <color name="white50Opacity">#7fffffff</color>
+
+    <color name="settings_item_title">#212121</color>
+    <color name="settings_item_subtitle">#A6212121</color>
+    <color name="pin_non_selected_indicator">#afafaf</color>
+    <color name="pin_key">#626262</color>
+
+    <color name="divider_tint">#e1e1e1</color>
+
+    <color name="no_internet_connection_background">#ffe33450</color>
+    <color name="no_internet_connection_shadow">#1a010101</color>
+
+    <color name="splash_start_color">#ff1259c2</color>
+    <color name="splash_end_color">#ff00145a</color>
+
 </resources>

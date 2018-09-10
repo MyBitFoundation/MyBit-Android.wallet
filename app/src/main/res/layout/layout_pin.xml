@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pin_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:gravity="center"
+        android:text="@string/enter_passcode"
+        android:textSize="@dimen/big_text"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/ok_aciton"
+        android:text="@string/button_ok"
+        android:padding="@dimen/big_padding"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/pin_title"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginStart="@dimen/big_margin"
+        android:layout_marginEnd="@dimen/big_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <LinearLayout
+        android:id="@+id/pin_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/pin_margin_top"
+        android:layout_marginStart="@dimen/pin_margin_top"
+        android:layout_marginTop="@dimen/pin_margin_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pin_title">
+
+        <include layout="@layout/layout_pin_indicators" />
+
+        <include layout="@layout/layout_pin_keyboard" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

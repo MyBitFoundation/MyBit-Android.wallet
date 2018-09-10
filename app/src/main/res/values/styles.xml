@@ -2,35 +2,43 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowBackground">@android:color/white</item>
     </style>
+
     <style name="AppTheme.NoActionBar" parent="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="actionMenuTextColor">@color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+
+    </style>
+
+    <style name="AppTheme.HelperTextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/red</item>
+    </style>
 
     <!-- Splash Screen theme. -->
-
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
-
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="android:windowBackground">@drawable/splash_background</item>
-
     </style>
 
     <style name="AppTheme.Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
-        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
     </style>
 
     <style name="AppTheme.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">20sp</item>
     </style>
 
@@ -50,12 +58,13 @@
         <item name="android:textSize">14sp</item>
     </style>
 
-    <style name="MyToolbar">
+    <style name="MyToolbar" parent="AppTheme.Toolbar">
         <item name="theme">@style/ThemeOverlay.AppCompat.Dark</item>
         <item name="android:background">?colorPrimary</item>
     </style>
 
     <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@android:color/transparent</item>
         <item name="tabTextAppearance">@style/TabDarkTextAppearance</item>
         <item name="tabSelectedTextColor">@android:color/white</item>
     </style>
@@ -64,11 +73,106 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/semitransparentWhite</item>
         <item name="textAllCaps">true</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
     </style>
+
     <style name="TabLightTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="TotalAmountStyle">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/fontColorDarkBlue</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TokenTitleStyle">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/fontColorDark</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TokenAmountStyle">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/fontColorDark</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TokenUsdAmountStyle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TokenDividerStyle">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/tokenDividerColor</item>
+    </style>
+
+    <style name="BlueButtonStyle">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="SocialTextViewStyle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/normal_text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TransactionTitle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/fontColorDark</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TransactionAddress">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/fontColorDark64Opacity</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TransactionAmount">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPositive</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextInputLayoutStyle">
+        <item name="colorAccent">@color/lightBlue</item>
+    </style>
+
+    <style name="PinKeyTextView">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/key_pin</item>
+        <item name="android:textColor">@color/pin_key</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="NoInternetConnectionTextView">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/no_internet_popup_text_size</item>
     </style>
 
 </resources>

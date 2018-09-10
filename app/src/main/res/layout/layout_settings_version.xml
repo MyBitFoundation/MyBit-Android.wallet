@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/version_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/settings_item_height_version">
+
+    <TextView
+        android:id="@+id/version_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/settings_left_right_margin_item"
+        android:layout_marginStart="@dimen/settings_text_content_start"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="@string/title_version"
+        android:textColor="@color/settings_item_title"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintBottom_toTopOf="@+id/tv_version"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/settings_item_subtitle"
+        android:textSize="@dimen/list_group_head"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/version_title"
+        app:layout_constraintStart_toStartOf="@+id/version_title"
+        app:layout_constraintTop_toBottomOf="@+id/version_title"/>
+
+</android.support.constraint.ConstraintLayout>

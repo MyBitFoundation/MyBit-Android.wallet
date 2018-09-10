@@ -1,33 +1,88 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-	<dimen name="fab_margin">16dp</dimen>
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">11sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
     <dimen name="app_bar_height">200dp</dimen>
     <dimen name="item_width">200dp</dimen>
     <dimen name="text_margin">16dp</dimen>
 
-	<dimen name="small_padding">4dp</dimen>
-	<dimen name="normal_padding">8dp</dimen>
-	<dimen name="big_padding">16dp</dimen>
-	<dimen name="half_large_padding">32dp</dimen>
-	<dimen name="large_padding">64dp</dimen>
+    <dimen name="small_padding">4dp</dimen>
+    <dimen name="normal_padding">8dp</dimen>
+    <dimen name="big_padding">16dp</dimen>
+    <dimen name="half_large_padding">32dp</dimen>
+    <dimen name="large_padding">64dp</dimen>
 
-	<dimen name="small_margin">4dp</dimen>
-	<dimen name="normal_margin">8dp</dimen>
-	<dimen name="big_margin">16dp</dimen>
-	<dimen name="half_large_margin">32dp</dimen>
-	<dimen name="large_margin">64dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="normal_margin">8dp</dimen>
+    <dimen name="normal_margin_x">10dp</dimen>
+    <dimen name="big_margin">16dp</dimen>
+    <dimen name="half_large_margin">32dp</dimen>
+    <dimen name="large_margin">64dp</dimen>
 
-	<dimen name="small_text">12sp</dimen>
-	<dimen name="normal_text">16sp</dimen>
-	<dimen name="title_text">26sp</dimen>
-    <dimen name="list_content_margin">72dp</dimen>
+    <dimen name="small_text">12sp</dimen>
+    <dimen name="normal_text">16sp</dimen>
+    <dimen name="big_text">18sp</dimen>
+    <dimen name="title_text">26sp</dimen>
+    <dimen name="key_pin">36sp</dimen>
+
+    <dimen name="list_content_margin">63dp</dimen>
     <dimen name="list_group_head">14sp</dimen>
     <dimen name="title_height_small">48dp</dimen>
-    <dimen name="title_height_normal">56dp</dimen>
+    <dimen name="title_height_normal">57dp</dimen>
 
     <dimen name="intro_height">340dp</dimen>
     <dimen name="intro_img_size">200dp</dimen>
+
+    <dimen name="settings_item_height">90dp</dimen>
+    <dimen name="settings_item_height_version">80dp</dimen>
+    <dimen name="settings_item_image_width">26dp</dimen>
+    <dimen name="settings_left_right_margin_item">27dp</dimen>
+    <dimen name="settings_item_top">22dp</dimen>
+    <dimen name="settings_text_left_margin">21dp</dimen>
+    <dimen name="settings_security_left_margin">17dp</dimen>
+    <dimen name="settings_item_bottom">20dp</dimen>
+    <dimen name="settings_switch_left_margin">28dp</dimen>
+    <dimen name="settings_default_social_icon">23dp</dimen>
+    <dimen name="settings_reddit_width_icon">27dp</dimen>
+    <dimen name="settings_youtube_width_icon">32dp</dimen>
+    <dimen name="settings_privacy_width_icon">19dp</dimen>
+    <dimen name="settings_text_content_start">73dp</dimen>
+
+    <dimen name="import_large_margin">160dp</dimen>
+    <dimen name="import_paste_width">110dp</dimen>
+    <dimen name="import_scan_width">50dp</dimen>
+
+    <dimen name="logo_width">47dp</dimen>
+    <dimen name="logo_height">80dp</dimen>
+
+    <dimen name="pin_logo_margin_top">43dp</dimen>
+    <dimen name="pin_title_margin_top">55dp</dimen>
+    <dimen name="pin_margin_top">19dp</dimen>
+    <dimen name="pin_indicator">18dp</dimen>
+    <dimen name="pin_keyboard_margin_top">75dp</dimen>
+    <dimen name="pin_keyboard_margin_start_end">25dp</dimen>
+    <dimen name="pin_remove_key_width">24dp</dimen>
+    <dimen name="pin_remove_key_height">18dp</dimen>
+    <dimen name="pin_line_height">67dp</dimen>
+
+    <dimen name="divider_height">1dp</dimen>
+
+    <dimen name="token_icon_size">42dp</dimen>
+
+    <dimen name="no_internet_popup_height">49dp</dimen>
+    <dimen name="no_internet_popup_margin_se">8dp</dimen>
+    <dimen name="no_internet_popup_margin_bottom">67dp</dimen>
+    <dimen name="no_internet_popup_radius">3dp</dimen>
+    <dimen name="no_internet_popup_shadow_bottom">3dp</dimen>
+    <dimen name="no_internet_popup_text_size">14sp</dimen>
+
+    <dimen name="splash_mybit_image_top">139dp</dimen>
+    <dimen name="splash_welcome_top">237dp</dimen>
+    <dimen name="splash_mybit_title_top">262dp</dimen>
+    <dimen name="splash_wait_bottom">28dp</dimen>
 </resources>

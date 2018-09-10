@@ -1,44 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:paddingTop="@dimen/big_padding"
-    android:paddingBottom="@dimen/big_padding"
-    android:paddingStart="0dp"
-    android:paddingEnd="@dimen/big_padding"
-    android:clickable="true"
+    android:id="@+id/layout_root"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    >
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_total_amount">
+
     <ImageView
-        android:id="@+id/logo"
-        android:src="@mipmap/token_logo"
-        android:contentDescription="@string/empty"
-        android:layout_marginStart="@dimen/big_margin"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        />
+        android:id="@+id/iv_token"
+        android:layout_width="@dimen/token_icon_size"
+        android:layout_height="@dimen/token_icon_size"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_eth_in_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <TextView
-        android:id="@+id/symbol"
-        android:textSize="12sp"
-        android:textAllCaps="true"
-        android:textAppearance="?attr/textAppearanceListItem"
-        android:layout_marginStart="@dimen/big_margin"
-        android:layout_marginEnd="@dimen/normal_margin"
-        android:layout_toEndOf="@+id/logo"
-        android:layout_toStartOf="@+id/balance"
-        android:layout_centerVertical="true"
+        android:id="@+id/tv_token_title"
+        style="@style/TokenTitleStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="TRST"
-        />
-    <TextView
-        android:id="@+id/balance"
-        android:layout_marginEnd="13dp"
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_token"
+        app:layout_constraintEnd_toStartOf="@+id/layout_amount"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/iv_token"
+        app:layout_constraintTop_toTopOf="@+id/iv_token"
+        tools:text="Ethereum (ETH)"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_amount"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="8888888"
-        />
-</RelativeLayout>
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_token"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_token_title"
+        app:layout_constraintTop_toTopOf="@+id/iv_token">
+
+        <TextView
+            android:id="@+id/tv_amount"
+            style="@style/TokenAmountStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/tv_amount_usd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="0"/>
+
+        <TextView
+            android:id="@+id/tv_amount_usd"
+            style="@style/TokenUsdAmountStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_amount"
+            tools:text="0.15534535"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        style="@style/TokenDividerStyle"
+        android:layout_width="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_token_title"
+        app:layout_constraintTop_toBottomOf="@+id/iv_token"/>
+
+</android.support.constraint.ConstraintLayout>
