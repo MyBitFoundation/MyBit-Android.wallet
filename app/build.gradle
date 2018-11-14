@@ -22,12 +22,12 @@ android {
     String MAINNET = 'mainnet'
     String TESTNET = 'testnet'
 
-    compileSdkVersion 27
-    buildToolsVersion '27.0.3'
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId "com.mybitapp"
         minSdkVersion 18
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 37
         versionName "1.4.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -35,7 +35,7 @@ android {
         multiDexEnabled = true
 
         //CONFIGURATION
-        buildProps = getBuildProperties(TESTNET)
+        buildProps = getBuildProperties(MAINNET)
         buildConfigField 'String', 'NETWORK_NAME', buildProps['NETWORK_NAME'].toString()
         buildConfigField 'String', 'RPC_SERVER_URL', buildProps['RPC_SERVER_URL'].toString()
         buildConfigField 'String', 'BACKEND_URL', buildProps['BACKEND_URL'].toString()
