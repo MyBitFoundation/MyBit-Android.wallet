@@ -13,7 +13,7 @@ public abstract class C {
     public static final String MYB_SYMBOL = "MYB";
     public static final String MYBIT_TOKEN_NAME = "MyBit";
     public static final String MYBIT_TOKEN_ADDRESS = "0x94298F1e0Ab2DFaD6eEFfB1426846a3c29D98090";
-    public static final int MYBIT_DECIMALS = 8;
+    public static final int MYBIT_DECIMALS = 18;
 
     public static final String ETH_SYMBOL = "ETH";
     public static final String ETHEREUM_ADDRESS = "0x0000000000000000000000000000000000000000";
