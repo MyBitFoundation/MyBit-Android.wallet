@@ -1,35 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:padding="24dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    >
+    android:orientation="vertical"
+    android:padding="24dp">
+
     <TextView
-        android:text="@string/dialog_message"
-        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_regular"
         android:gravity="center_horizontal"
+        android:text="@string/dialog_message"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
-    <com.wallet.crypto.mybitapp.ui.widget.view.HelperTextInputLayout
-        app:hintEnabled="false"
-        app:errorEnabled="true"
-        app:passwordToggleEnabled="true"
-        app:helperText="@string/suggestion_empty_password_available"
-        app:errorTextAppearance="@style/AppTheme.HelperTextInputLayout"
         android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        <EditText
+        app:errorEnabled="true"
+        app:helperText="@string/suggestion_empty_password_available"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/password"
-            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
-    </com.wallet.crypto.mybitapp.ui.widget.view.HelperTextInputLayout>
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
 </LinearLayout>

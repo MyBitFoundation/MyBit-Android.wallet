@@ -1,7 +1,7 @@
 package com.wallet.crypto.mybitapp.ui.widget.adapter;
 
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.ViewGroup;
 
 import com.wallet.crypto.mybitapp.R;

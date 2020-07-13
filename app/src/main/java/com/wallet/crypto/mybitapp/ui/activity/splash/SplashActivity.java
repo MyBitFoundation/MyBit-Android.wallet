@@ -1,6 +1,6 @@
 package com.wallet.crypto.mybitapp.ui.activity.splash;
 
-import android.arch.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 
 import com.crashlytics.android.Crashlytics;

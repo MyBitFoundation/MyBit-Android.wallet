@@ -9,7 +9,7 @@ import android.widget.Toast;
 import com.wallet.crypto.mybitapp.entity.exception.ServiceErrorException;
 import com.wallet.crypto.mybitapp.entity.Wallet;
 import com.wallet.crypto.mybitapp.util.KS;
-import com.wallet.pwd.trustapp.PasswordManager;
+import com.wallet.crypto.mybitapp.util.PasswordManager;
 
 import java.security.SecureRandom;
 import java.util.Map;

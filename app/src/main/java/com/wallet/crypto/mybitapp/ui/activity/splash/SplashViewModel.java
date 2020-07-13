@@ -1,6 +1,6 @@
 package com.wallet.crypto.mybitapp.ui.activity.splash;
 
-import android.arch.lifecycle.LiveData;
+import androidx.lifecycle.LiveData;
 
 import com.wallet.crypto.mybitapp.entity.Wallet;
 import com.wallet.crypto.mybitapp.ui.base.BaseViewModel;

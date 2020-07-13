@@ -1,6 +1,6 @@
 package com.wallet.crypto.mybitapp.entity;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.wallet.crypto.mybitapp.C;
 

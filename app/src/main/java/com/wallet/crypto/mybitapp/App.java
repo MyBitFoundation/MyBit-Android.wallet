@@ -1,7 +1,7 @@
 package com.wallet.crypto.mybitapp;
 
 import android.content.Context;
-import android.support.multidex.MultiDex;
+import androidx.multidex.MultiDex;
 
 import com.wallet.crypto.mybitapp.di.DaggerAppComponent;
 

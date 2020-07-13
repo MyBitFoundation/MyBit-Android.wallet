@@ -1,7 +1,7 @@
 package com.wallet.crypto.mybitapp.ui.fragment.wallet;
 
-import android.arch.lifecycle.ViewModelProvider;
-import android.support.annotation.NonNull;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.annotation.NonNull;
 
 import com.wallet.crypto.mybitapp.interact.FetchTokensInteract;
 import com.wallet.crypto.mybitapp.interact.GetSessionInteract;

@@ -1,6 +1,6 @@
 package com.wallet.crypto.mybitapp;
 
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.wallet.crypto.mybitapp.controller.EtherStoreUtils;

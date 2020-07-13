@@ -1,8 +1,8 @@
 package com.wallet.crypto.mybitapp.ui.fragment.transactions;
 
-import android.arch.lifecycle.ViewModel;
-import android.arch.lifecycle.ViewModelProvider;
-import android.support.annotation.NonNull;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.annotation.NonNull;
 
 import com.wallet.crypto.mybitapp.interact.FetchTransactionsInteract;
 import com.wallet.crypto.mybitapp.interact.GetSessionInteract;

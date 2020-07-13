@@ -1,9 +1,9 @@
 package com.wallet.crypto.mybitapp.ui.activity.transactiondetail;
 
-import android.arch.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProviders;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;

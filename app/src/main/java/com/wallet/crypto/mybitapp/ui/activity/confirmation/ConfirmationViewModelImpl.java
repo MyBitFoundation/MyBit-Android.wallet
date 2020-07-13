@@ -1,8 +1,8 @@
 package com.wallet.crypto.mybitapp.ui.activity.confirmation;
 
 import android.app.Activity;
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 
 import com.wallet.crypto.mybitapp.C;
 import com.wallet.crypto.mybitapp.entity.ErrorEnvelope;

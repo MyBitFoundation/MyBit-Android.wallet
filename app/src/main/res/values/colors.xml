@@ -5,6 +5,8 @@
     <color name="colorPrimary">#0b3f9c</color>
     <color name="colorPrimaryDark">#083178</color>
     <color name="lightBlue">#1c68bc</color>
+    <color name="red">#D50000</color>
+    <color name="green">#00C853</color>
 
     <color name="secondary_text">#40000000</color>
 

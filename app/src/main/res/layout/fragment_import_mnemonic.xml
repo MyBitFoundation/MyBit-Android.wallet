@@ -5,19 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingEnd="@dimen/big_margin"
         android:paddingStart="@dimen/big_margin"
         android:paddingBottom="@dimen/big_margin">
 
-        <com.wallet.crypto.mybitapp.ui.widget.view.HelperTextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/mnemonic_input_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:theme="@style/TextInputLayoutStyle"
-            app:errorTextAppearance="@style/AppTheme.HelperTextInputLayout"
             app:helperText="@string/suggestion_mnemonic"
             app:hintAnimationEnabled="true"
             app:hintEnabled="true"
@@ -26,7 +25,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="@dimen/big_margin">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/mnemonic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -39,7 +38,7 @@
                 android:minLines="3"
                 android:singleLine="false"/>
 
-        </com.wallet.crypto.mybitapp.ui.widget.view.HelperTextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/btn_paste"
@@ -63,5 +62,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/mnemonic_input_layout"/>
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

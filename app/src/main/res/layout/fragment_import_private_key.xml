@@ -13,18 +13,17 @@
         android:layout_margin="@dimen/big_margin"
         android:orientation="vertical">
 
-        <com.wallet.crypto.mybitapp.ui.widget.view.HelperTextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/private_key_input_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/TextInputLayoutStyle"
-            app:errorTextAppearance="@style/AppTheme.HelperTextInputLayout"
             app:helperText="@string/suggestion_private_key"
             app:hintAnimationEnabled="true"
             app:hintEnabled="true"
             app:passwordToggleEnabled="true">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/private_key"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,7 +33,7 @@
                 android:inputType="textPassword"
                 android:maxLines="1"
                 android:singleLine="true"/>
-        </com.wallet.crypto.mybitapp.ui.widget.view.HelperTextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/import_action"

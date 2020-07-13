@@ -1,9 +1,10 @@
 package com.wallet.crypto.mybitapp;
 
 import android.content.Context;
-import android.support.test.InstrumentationRegistry;
+import androidx.test.platform.app.InstrumentationRegistry;
 
-import com.wallet.pwd.trustapp.PasswordManager;
+
+import com.wallet.crypto.mybitapp.util.PasswordManager;
 
 import org.junit.Test;
 

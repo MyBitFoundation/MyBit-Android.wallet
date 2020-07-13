@@ -1,12 +1,11 @@
 package com.wallet.crypto.mybitapp.ui.activity.splash;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 
 import com.wallet.crypto.mybitapp.entity.Wallet;
 import com.wallet.crypto.mybitapp.interact.FetchWalletsInteract;
 import com.wallet.crypto.mybitapp.interact.PassCodeInteract;
-import com.wallet.crypto.mybitapp.ui.base.BaseViewModel;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 
