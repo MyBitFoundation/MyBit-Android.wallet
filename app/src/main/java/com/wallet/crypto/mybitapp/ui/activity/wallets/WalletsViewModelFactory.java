@@ -1,7 +1,7 @@
 package com.wallet.crypto.mybitapp.ui.activity.wallets;
 
-import android.arch.lifecycle.ViewModelProvider;
-import android.support.annotation.NonNull;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.annotation.NonNull;
 
 import com.wallet.crypto.mybitapp.interact.CreateWalletInteract;
 import com.wallet.crypto.mybitapp.interact.DefaultWalletInteract;

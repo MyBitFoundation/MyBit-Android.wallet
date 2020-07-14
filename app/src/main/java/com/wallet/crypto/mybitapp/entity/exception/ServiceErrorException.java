@@ -1,6 +1,6 @@
 package com.wallet.crypto.mybitapp.entity.exception;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 public class ServiceErrorException extends Exception {
 

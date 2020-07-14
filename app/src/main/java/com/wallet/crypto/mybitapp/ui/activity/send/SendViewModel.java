@@ -1,6 +1,6 @@
 package com.wallet.crypto.mybitapp.ui.activity.send;
 
-import android.arch.lifecycle.LiveData;
+import androidx.lifecycle.LiveData;
 import android.content.Context;
 
 import com.wallet.crypto.mybitapp.ui.base.NoInternetConnectionBaseViewModel;

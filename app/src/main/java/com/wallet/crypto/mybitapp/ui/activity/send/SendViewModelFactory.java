@@ -1,6 +1,6 @@
 package com.wallet.crypto.mybitapp.ui.activity.send;
 
-import android.arch.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.wallet.crypto.mybitapp.router.ConfirmationRouter;
 import com.wallet.crypto.mybitapp.ui.widget.receiver.NetworkChangeReceiver;

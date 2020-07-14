@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="@+id/iv_token"
         tools:text="Ethereum (ETH)"/>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_amount"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
@@ -68,7 +68,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_amount"
             tools:text="0.15534535"/>
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <View
         style="@style/TokenDividerStyle"
@@ -78,4 +78,4 @@
         app:layout_constraintStart_toStartOf="@+id/tv_token_title"
         app:layout_constraintTop_toBottomOf="@+id/iv_token"/>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

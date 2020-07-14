@@ -1,11 +1,11 @@
 package com.wallet.crypto.mybitapp.ui.activity.send;
 
 import android.app.Activity;
-import android.arch.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputLayout;
+import androidx.annotation.Nullable;
+import com.google.android.material.textfield.TextInputLayout;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;

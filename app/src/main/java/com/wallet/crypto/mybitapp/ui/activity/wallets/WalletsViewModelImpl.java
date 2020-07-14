@@ -1,8 +1,8 @@
 package com.wallet.crypto.mybitapp.ui.activity.wallets;
 
 import android.app.Activity;
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 
 import com.crashlytics.android.Crashlytics;
 import com.wallet.crypto.mybitapp.C;

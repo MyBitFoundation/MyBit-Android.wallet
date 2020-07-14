@@ -1,7 +1,7 @@
 package com.wallet.crypto.mybitapp.ui.activity.receive;
 
-import android.arch.lifecycle.ViewModelProvider;
-import android.support.annotation.NonNull;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.annotation.NonNull;
 
 import com.wallet.crypto.mybitapp.repository.session.SessionRepositoryType;
 import com.wallet.crypto.mybitapp.ui.widget.receiver.NetworkChangeReceiver;

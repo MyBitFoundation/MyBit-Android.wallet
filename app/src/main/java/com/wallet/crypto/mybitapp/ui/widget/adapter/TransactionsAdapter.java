@@ -1,9 +1,9 @@
 package com.wallet.crypto.mybitapp.ui.widget.adapter;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.util.SortedList;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.SortedList;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.ViewGroup;
 
 import com.wallet.crypto.mybitapp.R;

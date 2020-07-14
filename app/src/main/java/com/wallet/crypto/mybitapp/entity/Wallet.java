@@ -2,7 +2,7 @@ package com.wallet.crypto.mybitapp.entity;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 public class Wallet implements Parcelable {
 

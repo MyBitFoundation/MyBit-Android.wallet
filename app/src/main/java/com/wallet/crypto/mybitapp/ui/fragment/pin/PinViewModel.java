@@ -1,6 +1,6 @@
 package com.wallet.crypto.mybitapp.ui.fragment.pin;
 
-import android.arch.lifecycle.LiveData;
+import androidx.lifecycle.LiveData;
 
 import com.wallet.crypto.mybitapp.ui.base.BaseViewModel;
 

@@ -1,9 +1,9 @@
 package com.wallet.crypto.mybitapp.ui.base;
 
-import android.support.annotation.MenuRes;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v7.app.ActionBar;
+import androidx.annotation.MenuRes;
+import androidx.annotation.NonNull;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import androidx.appcompat.app.ActionBar;
 import android.view.MenuItem;
 
 import com.wallet.crypto.mybitapp.R;

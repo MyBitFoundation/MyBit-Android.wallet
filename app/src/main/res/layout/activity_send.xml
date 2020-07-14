@@ -20,7 +20,7 @@
             android:layout_marginTop="@dimen/big_margin"
             android:orientation="horizontal">
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/to_input_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -37,7 +37,7 @@
                     android:paddingEnd="@dimen/half_large_padding"
                     android:paddingRight="@dimen/half_large_padding"/>
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <ImageButton
                 android:id="@+id/scan_barcode_button"
@@ -50,7 +50,7 @@
                 android:src="@mipmap/qr_code_icon"/>
         </RelativeLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/amount_input_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -65,6 +65,6 @@
                 android:imeOptions="actionUnspecified"
                 android:inputType="numberDecimal"
                 android:maxLines="1"/>
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 </FrameLayout>

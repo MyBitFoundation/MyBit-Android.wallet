@@ -2,7 +2,7 @@ package com.wallet.crypto.mybitapp.router;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.wallet.crypto.mybitapp.C;
 import com.wallet.crypto.mybitapp.ui.activity.wallets.WalletsActivity;

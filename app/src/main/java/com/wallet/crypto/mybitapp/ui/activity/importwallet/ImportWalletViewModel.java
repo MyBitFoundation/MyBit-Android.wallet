@@ -1,9 +1,8 @@
 package com.wallet.crypto.mybitapp.ui.activity.importwallet;
 
-import android.arch.lifecycle.LiveData;
+import androidx.lifecycle.LiveData;
 
 import com.wallet.crypto.mybitapp.entity.Wallet;
-import com.wallet.crypto.mybitapp.ui.base.BaseViewModel;
 import com.wallet.crypto.mybitapp.ui.base.NoInternetConnectionBaseViewModel;
 import com.wallet.crypto.mybitapp.ui.widget.OnImportKeystoreListener;
 import com.wallet.crypto.mybitapp.ui.widget.OnImportMnemonicListener;

@@ -1,6 +1,6 @@
 package com.wallet.crypto.mybitapp.util;
 
-import android.support.annotation.DrawableRes;
+import androidx.annotation.DrawableRes;
 
 import com.wallet.crypto.mybitapp.C;
 import com.wallet.crypto.mybitapp.R;

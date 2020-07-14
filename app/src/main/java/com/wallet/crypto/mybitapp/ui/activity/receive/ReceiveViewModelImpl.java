@@ -1,7 +1,7 @@
 package com.wallet.crypto.mybitapp.ui.activity.receive;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import android.graphics.Bitmap;
 
 import com.wallet.crypto.mybitapp.entity.NetworkInfo;

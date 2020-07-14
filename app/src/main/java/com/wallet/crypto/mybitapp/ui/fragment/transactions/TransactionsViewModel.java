@@ -1,11 +1,10 @@
 package com.wallet.crypto.mybitapp.ui.fragment.transactions;
 
-import android.arch.lifecycle.LiveData;
+import androidx.lifecycle.LiveData;
 import android.content.Context;
 
 import com.wallet.crypto.mybitapp.entity.Session;
 import com.wallet.crypto.mybitapp.entity.Transaction;
-import com.wallet.crypto.mybitapp.entity.TransactionModel;
 import com.wallet.crypto.mybitapp.ui.base.BaseViewModel;
 
 public abstract class TransactionsViewModel extends BaseViewModel {

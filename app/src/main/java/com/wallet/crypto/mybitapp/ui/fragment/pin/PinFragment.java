@@ -1,12 +1,11 @@
 package com.wallet.crypto.mybitapp.ui.fragment.pin;
 
-import android.arch.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProviders;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.view.LayoutInflater;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import android.view.View;
-import android.view.ViewGroup;
 
 import com.wallet.crypto.mybitapp.C;
 import com.wallet.crypto.mybitapp.R;
@@ -17,7 +16,6 @@ import com.wallet.crypto.mybitapp.ui.widget.view.PinView;
 import javax.inject.Inject;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class PinFragment extends BaseFragment<PinViewModel> implements OnPinResultListener {
     private static final int LAYOUT_ID = R.layout.activity_pin;
